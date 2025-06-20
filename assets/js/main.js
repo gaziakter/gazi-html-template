@@ -21,5 +21,23 @@
       once: true
     });
 
+
+    //Portfolio Section Filter
+    $('.filter-btn').on('click', function () {
+      var filterValue = $(this).attr('data-filter');
+
+      $('.filter-btn').removeClass('active');
+      $(this).addClass('active');
+
+      $('.portfolio-item').each(function () {
+        var itemCategory = $(this).data('category');
+        if (filterValue === 'all' || itemCategory === filterValue) {
+          $(this).fadeIn(400);
+        } else {
+          $(this).fadeOut(400);
+        }
+      });
+    });
+
 })(jQuery);
 

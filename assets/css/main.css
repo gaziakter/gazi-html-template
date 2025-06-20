@@ -23,6 +23,104 @@ a {
   padding-top: 120px !important;
   padding-bottom: 120px !important;
 }
+
+.section-title-light {
+    position: relative;
+}
+
+.section-title-light::after {
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #10bc69;
+    display: block;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border-radius: 6px;
+}
+
+.section-title-right {
+    position: relative;
+}
+
+.section-title-right::after {
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #10bc69;
+    display: block;
+    padding: 0;
+    margin: 10px 0 0 0;
+    border-radius: 6px;
+    float: right;
+}
+
+a.title-btn {
+    display: inline;
+    float: right;
+    border: 1px solid;
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: #10bc69;
+}
+div.title-text {
+    margin: 15px 0 20px 0;
+    padding: 0;
+}
+
+.btn-green {
+  background-color: var(--brand-green);
+  color: var(--white) !important;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: 1px solid var(--brand-green);
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.btn-green:hover,
+.btn-green:focus,
+.btn-green:active {
+  background-color: var(--brand-dark-green);
+}
+
+.btn-green-border {
+  color: var(--brand-green);
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: 1px solid var(--brand-green);
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.btn-green-border:hover,
+.btn-green-border:focus,
+.btn-green-border:active {
+  background-color: var(--brand-dark-green);
+  color: var(--white);
+}
+
+.btn-transparent {
+  color: var(--white) !important;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  border: 1px solid var(--white) !important;
+  border-radius: 6px;
+  transition: 0.3s;
+  margin-left: 5px;
+}
+
+.btn-transparent:hover,
+.btn-transparent:focus,
+.btn-transparent:active {
+  background-color: var(--white) !important;
+    color: var(--brand-gray) !important;
+}
+
+.content-padding{
+  padding-top: 20px;
+}
 /* ============================
     Transparent Header (Default)
 ============================= */
@@ -142,18 +240,6 @@ a {
   margin-bottom: 2rem;
 }
 
-.cta-button {
-  background-color: var(--brand-green);
-  color: #fff;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 6px;
-}
-
-.cta-button:hover {
-  background-color: var(--brand-dark-green);
-}
 
 /* =======================
 About Section
@@ -165,14 +251,17 @@ About Section
 }
 
 .about-img img {
+    width: 100%;
+}
+/* .about-img img {
     border-radius: 1rem;
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
+} */
 
 
-.about-img {
+/* .about-img {
     position: relative;
     overflow: hidden;
     border-radius: 1rem;
@@ -198,7 +287,43 @@ About Section
 
 .about-img:hover img {
     transform: scale(1.05);
+} */
+.social-menu {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding-left: 0;
+  justify-content: center;
+  margin-top: 50px;
 }
+
+.social-menu li {
+  display: inline-block;
+}
+
+.social-menu a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: 50%;
+  color: #fff;
+  background-color: var(--brand-gray);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 4px 8px  var(--brand-gray);
+}
+
+.social-menu a:hover {
+  background-color: #0e9f57;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(16, 188, 105, 0.5);
+  color: #fff;
+}
+
+
 
 /*=========================
 Services Section
@@ -230,7 +355,7 @@ Services Section
     background-color: #1c1c1c;
     border: 1px solid #2c2c2c;
     transition: all 0.3s ease;
-    padding: 50px 10px;
+    padding: 50px 30px;
 }
 
 .service-box:hover {
@@ -264,6 +389,49 @@ p.aos-init.aos-animate {
     width: 500px;
     display: inline-block;
 }
+
+/*===========================
+Portfolio Section
+==============================*/
+.portfolio-section {
+  background-color: #fff;
+  color: #333;
+}
+
+.filter-btn {
+  margin: 0 0.3rem;
+  padding: 0.5rem 1.2rem;
+  background-color: #f1f1f1;
+  border: none;
+  color: #333;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color: #10bc69;
+  color: #fff;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {

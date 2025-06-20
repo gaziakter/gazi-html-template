@@ -19,6 +19,10 @@ a {
   transition: all 0.3s ease;
 }
 
+.section-padding{
+  padding-top: 120px !important;
+  padding-bottom: 120px !important;
+}
 /* ============================
     Transparent Header (Default)
 ============================= */
@@ -77,6 +81,23 @@ a {
   display: inline;
 }
 
+.section-title-left {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: left;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.section-title-left::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #10bc69;
+  display: block;
+  margin-top: 8px;
+  border-radius: 2px;
+}
 
 /* ============================
     Hero Section
@@ -150,22 +171,6 @@ About Section
     object-fit: cover;
 }
 
-.section-title {
-    font-size: 2.25rem;
-    font-weight: 600;
-    color: #10bc69;
-    position: relative;
-}
-
-.section-title::after {
-    content: '';
-    width: 60px;
-    height: 4px;
-    background-color: #10bc69;
-    display: block;
-    margin-top: 8px;
-    border-radius: 2px;
-}
 
 .about-img {
     position: relative;
@@ -195,6 +200,70 @@ About Section
     transform: scale(1.05);
 }
 
+/*=========================
+Services Section
+==========================*/
+.services-section {
+  background-color: #111;
+  color: #ffffff;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center; 
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #10bc69;
+  display: block;
+  margin: 8px auto 0 auto; 
+}
+
+
+.service-box {
+    background-color: #1c1c1c;
+    border: 1px solid #2c2c2c;
+    transition: all 0.3s ease;
+    padding: 50px 10px;
+}
+
+.service-box:hover {
+  color: #ffffff;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.service-box .service-icon {
+  font-size: 2.5rem;
+  color: #10bc69;
+  transition: 0.3s;
+}
+
+.service-box:hover .service-icon {
+  color: #ffffff;
+}
+
+.services-section p {
+  font-size: 0.95rem;
+  color: #cccccc;
+}
+
+a.btn.cta-button.btn-border {
+    background: transparent;
+    border: 1px solid #fff;
+     color: #fff;
+}
+
+p.aos-init.aos-animate {
+    width: 500px;
+    display: inline-block;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

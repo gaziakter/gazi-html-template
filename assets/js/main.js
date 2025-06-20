@@ -14,4 +14,12 @@
     $(window).on("scroll", toggleNavbarState);
   });
 
+  //animation in service section
+      AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+
 })(jQuery);
+

@@ -21,6 +21,11 @@
     <!-- Favicon -->
     <link rel="icon" href="assets/images/logo/gaizakter_icon.png" type="image/x-icon" />
 
+    <!-- Required in <head> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -87,7 +92,7 @@
         <!-- Right Column: Content -->
         <div class="col-lg-7 offset-lg-1">
             <div class="about-content">
-            <h2 class="section-title mb-4">About Me</h2>
+            <h2 class="section-title-left mb-4">About Me</h2>
             <p>Hi! I'm <strong>Gazi Akter</strong>, a dedicated and passionate <strong>Full-Stack Web Developer</strong> with a strong commitment to building efficient, scalable, and elegant web solutions. I specialize in modern technologies like <strong>Laravel</strong>, <strong>WordPress</strong>, <strong>React</strong>, <strong>PHP</strong>, and <strong>JavaScript</strong>, enabling me to craft robust applications that are both functional and user-centric.</p>
 
             <p>Over the years, I've had the opportunity to work on a wide range of projects—from intuitive landing pages and dynamic business websites to powerful web applications and e-commerce platforms. My approach blends clean, maintainable code with thoughtful design principles, ensuring not only great performance but also an engaging user experience.</p>
@@ -104,6 +109,93 @@
     </div>
     </section>
 
+    <!-- Services Section (Dark Theme with AOS Animations) -->
+    <section id="services" class="services-section section-padding bg-dark text-white py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+        <h2 class="section-title" data-aos="fade-up">What I Do</h2>
+        <p class="" data-aos="fade-up" data-aos-delay="100">Offering custom web development, UI/UX design, and scalable digital solutions tailored to grow your business efficiently and effectively.</p>
+        </div>
+
+        <div class="row g-4">
+        <!-- Service Item 1 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-code-slash"></i>
+            </div>
+            <h5>Web Development</h5>
+            <p>Fast, clean, and scalable applications built using Laravel, React, and PHP.</p>
+            <a href="#contact" class="btn cta-button btn-border">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Item 2 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-wordpress"></i>
+            </div>
+            <h5>WordPress Development</h5>
+            <p>Custom themes, plugins, speed optimization, and full site builds.</p>
+            <a href="#contact" class="btn cta-button  btn-border">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Item 3 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-brush"></i>
+            </div>
+            <h5>UI/UX Design</h5>
+            <p>Designing intuitive interfaces that enhance user experience and engagement.</p>
+            <a href="#contact" class="btn cta-button  btn-border">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Item 4 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-speedometer2"></i>
+            </div>
+            <h5>Performance Optimization</h5>
+            <p>Speed matters. I optimize sites for fast load times and high performance scores.</p>
+            <a href="#contact" class="btn cta-button  btn-border">Read More</a>
+            </div>
+        </div>
+
+        <!-- Service Item 5 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-cart-check"></i>
+            </div>
+            <h5>E-Commerce Development</h5>
+            <p>Custom online stores using WooCommerce or Laravel for smooth shopping experiences.</p>
+            <a href="#contact" class="btn cta-button  btn-border">Read More</a>
+
+            </div>
+        </div>
+
+        <!-- Service Item 6 -->
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box text-center h-100 rounded-4 shadow-sm">
+            <div class="service-icon mb-3">
+                <i class="bi bi-bar-chart-line"></i>
+            </div>
+            <h5>SEO & Analytics</h5>
+            <p>Technical SEO setup, schema markup, and Google Analytics integration for insights.</p>
+            <a href="#contact" class="btn cta-button  btn-border">Read More</a>
+
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
 
 
     <!-- Footer -->
@@ -116,6 +208,8 @@
 
     <!-- jQuery CDN (place before your script) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
     <script src="assets/js/main.js"></script>
 
     <!-- Bootstrap 5 JS -->

@@ -1,64 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>Gazi Akter -  Full Stack Web Developer</title>
-  </head>
-  <body>
-        <header class="header-section navbar-light bg-light">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Professional Full-Stack Developer Portfolio – Laravel, WordPress, React, and more." />
+    <meta name="keywords" content="Full-Stack Developer, Portfolio, Laravel, WordPress, React, PHP, JavaScript" />
+    <meta name="author" content="Gazi Akter" />
+
+    <title>Gazi Akter – Full-Stack Web Developer</title>
+
+    <!-- Google Fonts: Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo/gaizakter_icon.png" type="image/x-icon" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4">
-                        <div class="header-logo">
-                            <a href=""><img src="assets/images/logo/gaziakter.png" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-4">
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded" aria-label="Twelfth navbar example">
-                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample10" aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                              </button>
-                      
-                              <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-                                <ul class="navbar-nav">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
-                                  </li>
-                                  <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown10">
-                                      <li><a class="dropdown-item" href="#">Action</a></li>
-                                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    </ul>
-                                  </li>
-                                </ul>
-                              </div>
-                          </nav>
-                    </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 text-end">
-                        <div class="header-btn">
-                            <!--<a href="" type="button" class="btn btn-outline-primary me-2 btn-basic">Talk Me</a> -->
-                            <a href="" type="button" class="btn btn-primary btn-pro">Talk Me</a>
-                        </div>
-                    </div>
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                      <!-- Logo for default (transparent) state -->
+                      <img src="assets/images/logo/logo-light.png" alt="Logo Light" class="logo-default">
+                      <!-- Logo for scrolled (white background) state -->
+                      <img src="assets/images/logo/logo-dark.png" alt="Logo Dark" class="logo-scrolled">
+
+                   <!-- <span class="ms-2 text-white fw-semibold d-none d-md-inline">Gazi Akter</span>-->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                    <a href="#contact" class="btn cta-button ms-3">Talk Me</a>
                 </div>
             </div>
-        </header>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url(assets/images/hero/hero-bg.png);" id="home">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 col-md-12 hero-content">
+                    <h1>Welcome to</h1>
+                    <span class="highlight">Gazi Akter</span>
+                    <p class="lead">
+                        I’m a Full-Stack Web Developer specializing in Laravel, WordPress, React, JavaScript, and PHP. I craft fast, clean, scalable web solutions tailored to your vision. Let's build something great together!
+                    </p>
+                    <a href="#contact" class="btn cta-button">Talk Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">© 2025 Gazi Akter. All rights reserved.</p>
+        </div>
+    </footer>
 
 
+    <!-- jQuery CDN (place before your script) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
-  </body>
+</body>
 </html>

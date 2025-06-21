@@ -1,7 +1,15 @@
 :root {
   --brand-green: #10bc69;
   --brand-dark-green: #0e9f57;
+  --brand-green2: #40c987;
+  --brand-green3: #70d7a5;
+  --brand-green4: #9fe4c3;
+  --brand-green5: #cff2e1;
   --brand-gray: #5f687b;
+  --brand-gray2: #7f8695;
+  --brand-gray3: #9fa4b0;
+  --brand-gray4: #bfc3ca;
+  --brand-gray5: #dfe1e5;
   --white: #ffffff;
   --black: #000000;
 }
@@ -245,49 +253,15 @@ div.title-text {
 About Section
 ============================= */
 .about-section {
-    background-color: #f9fafb;
-    color: #5f687b;
+    background-color: var(--brand-gray5);
+    color: var(--brand-gray);
     padding: 120px 0;
 }
 
 .about-img img {
     width: 100%;
 }
-/* .about-img img {
-    border-radius: 1rem;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-} */
 
-
-/* .about-img {
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-    box-shadow: 8px 5px 8px 7px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.about-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 1rem;
-    object-fit: cover;
-    transition: transform 0.4s ease;
-    border: 1px solid #10bc69;
-    padding: 30px 0 0 0;
-}
-
-.about-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.about-img:hover img {
-    transform: scale(1.05);
-} */
 .social-menu {
   list-style: none;
   display: flex;
@@ -326,11 +300,11 @@ About Section
 
 
 /*=========================
-Services Section
+Services Sections
 ==========================*/
 .services-section {
-  background-color: #111;
-  color: #ffffff;
+  background-color: var(--brand-green5);
+  color: var(--brand-gray);
 }
 
 
@@ -376,7 +350,6 @@ Services Section
 
 .services-section p {
   font-size: 0.95rem;
-  color: #cccccc;
 }
 
 a.btn.cta-button.btn-border {
@@ -390,12 +363,17 @@ p.aos-init.aos-animate {
     display: inline-block;
 }
 
+a .service-box h5,
+a .service-box p {
+    color: var(--white) !important;
+}
+
 /*===========================
 Portfolio Section
 ==============================*/
 .portfolio-section {
-  background-color: #fff;
-  color: #333;
+  background-color: var(--brand-gray5);
+  color: var(--brand-gray);
 }
 
 .filter-btn {
@@ -405,7 +383,7 @@ Portfolio Section
   border: none;
   color: #333;
   font-weight: 500;
-  border-radius: 30px;
+  border-radius: 6px;
   transition: all 0.3s ease;
 }
 
@@ -416,20 +394,40 @@ Portfolio Section
 }
 
 .card {
-  border: none;
-  border-radius: 10px;
+
+  border-radius: 6px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+.card-container {
+  position: relative;
+  overflow: hidden;
 }
 
-.card-img-top {
-  height: 220px;
-  object-fit: cover;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--brand-green);
+  color: white;
+  text-decoration: none;
+  opacity: 0;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  transition: opacity 0.3s ease;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay span {
+    border: 1px solid var(--white);
+    border-radius: 6px;
+    padding: 15px 20px;
 }
 
 

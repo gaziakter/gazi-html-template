@@ -39,5 +39,19 @@
       });
     });
 
+    // scroll to top button
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 200) {
+        $('#scrollTopBtn').fadeIn();
+      } else {
+        $('#scrollTopBtn').fadeOut();
+      }
+    });
+
+    $('#scrollTopBtn').click(function(){
+      $('html, body').animate({scrollTop: 0}, 600);
+      return false;
+    });
+
 })(jQuery);
 

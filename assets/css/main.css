@@ -63,6 +63,22 @@ a {
     float: right;
 }
 
+.section-title-center {
+    position: relative;
+}
+
+.section-title-center::after {
+    content: '';
+    width: 30%;
+    height: 3px;
+    background-color: #10bc69;
+    display: block;
+    padding: 0;
+    margin: auto;
+    border-radius: 6px;
+}
+
+
 a.title-btn {
     display: inline;
     float: right;
